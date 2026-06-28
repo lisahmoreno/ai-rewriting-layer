@@ -1,6 +1,10 @@
 # AI Rewriting Layer — Duplicate-Content Avoidance
 
-Sanitised excerpt from a shipped feature in a PHP/Symfony backend. Combined from: the concept page (internal), the shipped code in the extranet backend (`src/Service/AiRewriting/`), and a provider A/B sample-output evaluation.
+**Status: Prototype** — working and validated on real data (14 hotels / 161 offers), on a feature branch; not merged to main or deployed to production.
+
+Sanitised excerpt of a working prototype in a PHP/Symfony backend. Combined from: the concept page (internal), the code in the feature branch (`src/Service/AiRewriting/`), and a provider A/B sample-output evaluation.
+
+**My commits:** the founding module — the initial service, provider layer, both guards, validator, entity + migration, CLI command, and unit tests. A developer subsequently extended the branch (GraphQL API + admin comparison view, Twig-templated prompts with content-hash versioning, prompt-injection/XSS guards, approve/reject workflow). The code shown here is from my commits; the developer's extensions are not included.
 
 ---
 
